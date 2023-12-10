@@ -30,7 +30,7 @@ setLoading(true)
  
 {data.map( 
   (data) =>
-<Item item={data.title} key = {crypto.randomUUID()}/>
+<Item picture={data.image} item={data.title} key = {crypto.randomUUID()}/>
 )
 }
     </>

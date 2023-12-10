@@ -1,11 +1,17 @@
 import { useState } from 'react'
 
-function Item({item}) {
+function Item({item, picture}) {
 
   
   return (
     <>
-<div>{item}</div>
+<div><span>{item}</span>
+<img src={picture}/>
+<br></br>
+
+
+
+</div>
 
       
     </>
