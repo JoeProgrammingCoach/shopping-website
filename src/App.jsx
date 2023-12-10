@@ -27,12 +27,12 @@ setLoading(true)
 
   return (
     <>
-<div>{data.map( (data) =>
-<div key = {crypto.randomUUID()}>{data.title}</div>)}</div>
-
-<Item item=""/>
-<Item item="" />
-      
+ 
+{data.map( 
+  (data) =>
+<Item item={data.title} key = {crypto.randomUUID()}/>
+)
+}
     </>
   )
 }
