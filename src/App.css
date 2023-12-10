@@ -5,6 +5,11 @@
   text-align: center;
 }
 
+.store-name{
+text-align: center;
+font-size: 3rem;
+color: orange
+}
 
 img {
 max-width: 25%;

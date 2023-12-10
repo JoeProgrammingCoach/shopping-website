@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import Item from './components/Item'
 import './App.css'
+import Cart from "./components/Cart"
 
 function App() {
 const [cart, setCart] = useState([])
@@ -26,7 +27,8 @@ setLoading(true)
 
   return (
     <>
- 
+ <div className='store-name'>Joe's online store</div>
+
 {data.map( 
   (data) =>
 <Item className="description-container" picture={data.image} item={data.title} key = {crypto.randomUUID()}/>
