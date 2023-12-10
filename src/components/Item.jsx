@@ -5,7 +5,7 @@ function Item({item, picture}) {
   
   return (
     <>
-<div><span>{item}</span>
+<div><span className='item-description'>{item}</span>
 <img src={picture}/>
 <br></br>
 
