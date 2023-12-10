@@ -3,8 +3,7 @@ import Item from './components/Item'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
-  const [items, setItems] = useState([])
+const [cart, setCart] = useState([])
 const [ data, setData] = useState([])
 const [ loading, setLoading] = useState(true)
 
