@@ -21,5 +21,9 @@ padding-bottom: 100px;
 color:red;
 }
 .description-container{
-display:flex;
+margin-top: 10rem;
+}
+
+.item-price {
+margin-left: 10px;
 }
