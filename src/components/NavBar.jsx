@@ -10,7 +10,7 @@ return (
 className="search-box" type="text"></input>
    </nav>
 
-   
+   /* get images to display as links in the NavBar */
    )
 
 }
