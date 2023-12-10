@@ -5,6 +5,17 @@
   text-align: center;
 }
 
+.homePageNavBar {
+position: fixed;
+
+
+}
+
+.search-box {
+background-color: white;
+color: black;
+}
+
 .store-name{
 text-align: center;
 font-size: 3rem;

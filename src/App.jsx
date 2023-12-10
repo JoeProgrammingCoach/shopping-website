@@ -6,6 +6,7 @@ import NavBar from "./components/NavBar"
 
 function App() {
 const [cart, setCart] = useState([])
+const [userSearch, setUserSearch] = useState()
 const [ data, setData] = useState([])
 const [ loading, setLoading] = useState(true)
 
@@ -29,7 +30,7 @@ setLoading(true)
   return (
     <>
  <div className='store-name'>Joe's online store</div>
- <NavBar />
+ <NavBar value={setUserSearch} />
 
 {data.map( 
   (data) => /* should always be defined in the App component, not child component */

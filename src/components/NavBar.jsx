@@ -1,10 +1,13 @@
-function NavBar() {
+function NavBar({setUserSearch}) {
       
+
 return (
    <nav>
 
-<img src = "../icons/HomePage.png"/>
-
+<img src = "HomePage.png"/>
+<img src="grid.png" />
+<input value={setUserSearch}
+className="search-box" type="text"></input>
    </nav>
 
    
