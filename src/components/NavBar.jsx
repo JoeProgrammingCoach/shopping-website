@@ -6,7 +6,8 @@ return (
 
 <img src = "HomePage.png"/>
 <img src="grid.png" />
-<input value={setUserSearch}
+
+<input value={setUserSearch} placeholder="search for a product ..."
 className="search-box" type="text"></input>
    </nav>
 

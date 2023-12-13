@@ -1,9 +1,12 @@
 import { useState, useEffect } from 'react'
 import Item from './components/Item'
-import './App.css'
 import Cart from "./components/Cart"
 import NavBar from "./components/NavBar"
 import { BrowserRouter, Routes, Route } from "react-router-dom"
+import  MensClothing from "./pages/MensClothing"
+import  WomensClothing from "./pages/WomensClothing"
+import Electronics from "./pages/Electronics"
+import Jewelry from "./pages/Jewelry"
 
 function App() {
 const [cart, setCart] = useState([])
@@ -34,13 +37,29 @@ setLoading(true)
  <div className='store-name'>Joe's online store</div>
  <NavBar value={userSearch} />
 
+
+
+
+
 {data.map( 
   (data) => /* should always be defined in the App component, not child component */
 <Item price={data.price} className="description-container" picture={data.image} item={data.title} key = {crypto.randomUUID()}
-description={data.description}
+description={data.description} category={data.category}
 />
 )
 }
+
+
+<BrowserRouter>
+    <Routes>
+  <Route path="MensClothing" element={<MensClothing />}/>
+  <Route path="WomensClothing" element={<WomensClothing/>}/>
+  <Route path ="Electronics" element={<Electronics/>}/>
+  <Route path ="Jewelry" element={<Jewelry/>}/>
+  {/*<Route path="*" element={<PageNotFound />} /> */}
+    </Routes>
+    </BrowserRouter>
+
     </>
   )
 }
