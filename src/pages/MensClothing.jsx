@@ -1,9 +1,25 @@
-function MensClothing() {
+import Item from "../components/Item"
 
-   return(
+function MensClothing({data, category}) {
+
+
+{const filtered = data.filter(
+      () => {
+      return 
+   
+   }
+}
+
+   return(<div>
       <div>Men's clothing</div>
+      <div>{
+       {
+      <Item />}
+      )
       
-      
+      }
+      </div>
+      </div>
       )
       
 }

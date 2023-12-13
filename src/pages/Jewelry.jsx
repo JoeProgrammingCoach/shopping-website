@@ -3,7 +3,7 @@ function Jewelry() {
 
    return(
       <div>Jewelry</div>
-      
+   
       
       )
       

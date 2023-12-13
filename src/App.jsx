@@ -10,7 +10,7 @@ import Jewelry from "./pages/Jewelry"
 
 function App() {
 const [cart, setCart] = useState([])
-const [userSearch, setUserSearch] = useState()
+const [userSearch, setUserSearch] = useState("")
 const [ data, setData] = useState([])
 const [ loading, setLoading] = useState(true)
 
@@ -38,24 +38,21 @@ setLoading(true)
  <NavBar value={userSearch} />
 
 
-
-
-
-{data.map( 
-  (data) => /* should always be defined in the App component, not child component */
+{/*data.map(  // mapping products to the main page was causing the page to constantly reload
+  (data) =>  
 <Item price={data.price} className="description-container" picture={data.image} item={data.title} key = {crypto.randomUUID()}
 description={data.description} category={data.category}
 />
 )
-}
+ */}
 
 
 <BrowserRouter>
     <Routes>
-  <Route path="MensClothing" element={<MensClothing />}/>
-  <Route path="WomensClothing" element={<WomensClothing/>}/>
-  <Route path ="Electronics" element={<Electronics/>}/>
-  <Route path ="Jewelry" element={<Jewelry/>}/>
+  <Route path="/MensClothing" element={<MensClothing category = {category} data={data} />}/>
+  <Route path="/WomensClothing" element={<WomensClothing/>}/>
+  <Route path ="/Electronics" element={<Electronics/>}/>
+  <Route path ="/Jewelry" element={<Jewelry/>}/>
   {/*<Route path="*" element={<PageNotFound />} /> */}
     </Routes>
     </BrowserRouter>
