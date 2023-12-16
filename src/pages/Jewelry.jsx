@@ -1,10 +1,11 @@
+import Item from "../components/Item"
 
 function Jewelry() {
 
    return(
-      <div>Jewelry</div>
-   
-      
+      <div>Jewelry
+
+      </div>
       )
       
 }

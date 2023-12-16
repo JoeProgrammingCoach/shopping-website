@@ -2,6 +2,7 @@ import { useState } from 'react'
 
 function Item({item, picture, description, price, category}) {
 
+
   
   return (
     <>

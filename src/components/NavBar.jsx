@@ -1,12 +1,10 @@
-function NavBar({setUserSearch}) {
-      
+ import { NavLink, BrowserRouter } from "react-router-dom"
+ function NavBar({setUserSearch}) {
+     
 
 return (
    <nav>
-
-<img src = "HomePage.png"/>
-<img src="grid.png" />
-
+<div><span>Jewelry</span> <span>Electronics</span> <span></span></div>
 <input value={setUserSearch} placeholder="search for a product ..."
 className="search-box" type="text"></input>
    </nav>

@@ -1,4 +1,4 @@
-
+import Item from "../components/Item"
 function Electronics() {
 
    return(
